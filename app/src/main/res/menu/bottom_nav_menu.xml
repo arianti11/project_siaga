@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/beranda"
+        android:icon="@drawable/ic_home"
+        android:title="Beranda" />
+    <item
+        android:id="@+id/kondisi"
+        android:icon="@drawable/ic_kondisi"
+        android:title="Kondisi" />
+    <item
+        android:id="@+id/bantuan"
+        android:icon="@drawable/ic_bantuan"
+        android:title="Bantuan" />
+    <item
+        android:id="@+id/profil"
+        android:icon="@drawable/ic_profil"
+        android:title="Profil" />
+</menu>
