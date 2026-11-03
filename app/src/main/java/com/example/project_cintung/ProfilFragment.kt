@@ -52,8 +52,8 @@ class ProfilFragment : Fragment() {
         }
         binding.btnTentang.setOnClickListener {
             MaterialAlertDialogBuilder(requireContext())
-                .setTitle("Tentang SIAGA")
-                .setMessage("SIAGA adalah aplikasi panduan pertolongan pertama berbasis Android. Aplikasi ini bukan pengganti tenaga medis.")
+                .setTitle("Tentang FAST Rescue")
+                .setMessage("FAST Rescue adalah aplikasi panduan pertolongan pertama berbasis Android. Aplikasi ini bukan pengganti tenaga medis.")
                 .setPositiveButton("Tutup") { dialog, _ ->
                     dialog.dismiss()
                     Log.e("Info Dialog", "Dialog Tentang ditutup")

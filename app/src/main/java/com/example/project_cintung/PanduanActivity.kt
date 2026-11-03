@@ -1,5 +1,6 @@
 package com.example.project_cintung
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
@@ -32,7 +33,12 @@ class PanduanActivity : AppCompatActivity() {
         // ambil data yang dikirim dari halaman Kondisi
         val nama = intent.getStringExtra("EXTRA_NAMA")
         val ringkasan = intent.getStringExtra("EXTRA_RINGKASAN")
-        Log.w("PANDUAN", "Kondisi dibuka: $nama")
+        val langkah = intent.getStringExtra("EXTRA_LANGKAH")
+        val bantuan = intent.getStringExtra("EXTRA_BANTUAN")
+        val sumber = intent.getStringExtra("EXTRA_SUMBER")
+        val url = intent.getStringExtra("EXTRA_URL")
+        val nomor = intent.getIntExtra("EXTRA_NOMOR", 0)
+        Log.w("PANDUAN", "Kondisi nomor $nomor: $nama")
 
         setSupportActionBar(binding.toolbar)
         supportActionBar?.apply {
@@ -45,11 +51,15 @@ class PanduanActivity : AppCompatActivity() {
 
         binding.tvJudul.text = nama
         binding.tvRingkasan.text = ringkasan
+        binding.tvLangkah.text = langkah
+        binding.tvBantuan.text = bantuan
+        binding.tvSumber.text = "Sumber: $sumber"
 
-        // TODO: ganti dengan langkah khusus tiap kondisi dari PMI atau Kemenkes
-        binding.tvLangkah.text = "1. Pastikan area sekitar aman bagi kamu dan korban.\n" +
-                "2. Tetap tenang, lalu periksa kondisi korban.\n" +
-                "3. Hubungi bantuan darurat jika kondisi berat atau korban tidak sadar."
+        binding.btnSumber.setOnClickListener {
+            val intentWeb = Intent(this, WebViewActivity::class.java)
+            intentWeb.putExtra("EXTRA_URL", url)
+            startActivity(intentWeb)
+        }
 
         binding.btnBantuan.setOnClickListener {
             Snackbar.make(binding.root, "Segera hubungi 112 jika kondisi berat", Snackbar.LENGTH_LONG)
@@ -76,7 +86,7 @@ class PanduanActivity : AppCompatActivity() {
                 true
             }
             R.id.action_tentang -> {
-                Toast.makeText(this, "SIAGA: panduan pertolongan pertama", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "FAST Rescue: panduan pertolongan pertama", Toast.LENGTH_SHORT).show()
                 true
             }
             else -> super.onOptionsItemSelected(item)

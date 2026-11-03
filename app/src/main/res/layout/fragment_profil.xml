@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/siaga_bg"
+    android:background="@color/fast_rescue_bg"
     android:orientation="vertical"
     tools:context=".ProfilFragment">
 
@@ -12,7 +12,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/siaga_red_dark"
+        android:background="@color/fast_rescue_red_dark"
         app:titleTextColor="@android:color/white" />
 
     <LinearLayout
@@ -27,7 +27,7 @@
             android:layout_height="96dp"
             android:contentDescription="Foto profil"
             android:src="@drawable/ic_profil"
-            app:tint="@color/siaga_red" />
+            app:tint="@color/fast_rescue_red" />
 
         <TextView
             android:id="@+id/tvNama"
@@ -36,14 +36,14 @@
             android:layout_marginTop="12dp"
             android:fontFamily="@font/poppins_semibold"
             android:text="Pengguna"
-            android:textColor="@color/siaga_text"
+            android:textColor="@color/fast_rescue_text"
             android:textSize="20sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Masuk sebagai pengguna"
-            android:textColor="@color/siaga_gray"
+            android:textColor="@color/fast_rescue_gray"
             android:textSize="14sp" />
 
         <com.google.android.material.button.MaterialButton
@@ -51,8 +51,8 @@
             android:layout_width="match_parent"
             android:layout_height="52dp"
             android:layout_marginTop="32dp"
-            android:text="Tentang SIAGA"
-            app:backgroundTint="@color/siaga_red"
+            android:text="Tentang FAST Rescue"
+            app:backgroundTint="@color/fast_rescue_red"
             app:cornerRadius="12dp" />
 
         <com.google.android.material.button.MaterialButton
@@ -62,8 +62,8 @@
             android:layout_height="52dp"
             android:layout_marginTop="32dp"
             android:text="Logout"
-            android:textColor="@color/siaga_red"
+            android:textColor="@color/fast_rescue_red"
             app:cornerRadius="12dp"
-            app:strokeColor="@color/siaga_red" />
+            app:strokeColor="@color/fast_rescue_red" />
     </LinearLayout>
 </LinearLayout>

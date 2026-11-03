@@ -5,9 +5,9 @@
         android:icon="@drawable/ic_home"
         android:title="Beranda" />
     <item
-        android:id="@+id/kondisi"
-        android:icon="@drawable/ic_kondisi"
-        android:title="Kondisi" />
+        android:id="@+id/pencarian"
+        android:icon="@drawable/ic_search"
+        android:title="Pencarian" />
     <item
         android:id="@+id/bantuan"
         android:icon="@drawable/ic_bantuan"

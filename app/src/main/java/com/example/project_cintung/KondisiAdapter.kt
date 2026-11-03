@@ -1,7 +1,6 @@
 package com.example.project_cintung
 
 import android.content.Context
-import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,13 +10,13 @@ import com.example.project_cintung.databinding.ItemKondisiBinding
 
 class KondisiAdapter(
     context: Context,
-    private val kondisiList: List<KondisiModel>
+    kondisiList: List<KondisiModel>
 ) : ArrayAdapter<KondisiModel>(context, 0, kondisiList) {
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         val binding = ItemKondisiBinding.inflate(LayoutInflater.from(context), parent, false)
         val view = binding.root
-        val data = kondisiList[position]
+        val data = getItem(position)!!
 
         Glide.with(context)
             .load(data.iconRes)
@@ -27,10 +26,7 @@ class KondisiAdapter(
         binding.tvRingkasan.text = data.ringkasan
 
         view.setOnClickListener {
-            val intent = Intent(context, PanduanActivity::class.java)
-            intent.putExtra("EXTRA_NAMA", data.nama)
-            intent.putExtra("EXTRA_RINGKASAN", data.ringkasan)
-            context.startActivity(intent)
+            bukaPanduan(context, data)
         }
 
         return view

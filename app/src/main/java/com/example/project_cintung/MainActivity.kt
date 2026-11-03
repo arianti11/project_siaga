@@ -34,8 +34,8 @@ class MainActivity : AppCompatActivity() {
                     replaceFragment(BerandaFragment())
                     true
                 }
-                R.id.kondisi -> {
-                    replaceFragment(KondisiFragment())
+                R.id.pencarian -> {
+                    replaceFragment(PencarianFragment())
                     true
                 }
                 R.id.bantuan -> {

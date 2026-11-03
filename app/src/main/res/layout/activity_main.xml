@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/siaga_bg"
+    android:background="@color/fast_rescue_bg"
     tools:context=".MainActivity">
 
     <FrameLayout
@@ -22,7 +22,7 @@
         style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:backgroundTint="@color/siaga_red"
+        app:backgroundTint="@color/fast_rescue_red"
         app:itemIconTint="@color/white"
         app:itemTextColor="@color/white"
         app:labelVisibilityMode="labeled"

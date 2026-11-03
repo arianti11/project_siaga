@@ -1,7 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.Project_cintung" parent="Theme.Material3.DayNight.NoActionBar">
-        <item name="colorPrimary">@color/siaga_red</item>
+        <item name="colorPrimary">@color/fast_rescue_red</item>
     </style>
 
     <style name="Theme.Project_cintung" parent="Base.Theme.Project_cintung" />

@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/siaga_bg"
+    android:background="@color/fast_rescue_bg"
     tools:context=".LoginActivity">
 
     <androidx.cardview.widget.CardView
@@ -30,8 +30,8 @@
                 android:layout_width="56dp"
                 android:layout_height="65dp"
                 android:layout_gravity="center"
-                android:contentDescription="Logo SIAGA"
-                android:src="@drawable/ic_logo_siaga_merah" />
+                android:contentDescription="Logo FAST Rescue"
+                android:src="@drawable/ic_logo_fast_rescue_merah" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -39,8 +39,8 @@
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/poppins_bold"
                 android:gravity="center"
-                android:text="SIAGA"
-                android:textColor="@color/siaga_red"
+                android:text="FAST Rescue"
+                android:textColor="@color/fast_rescue_red"
                 android:textSize="30sp" />
 
             <TextView
@@ -49,7 +49,7 @@
                 android:layout_marginBottom="24dp"
                 android:gravity="center"
                 android:text="Panduan Pertolongan Pertama"
-                android:textColor="@color/siaga_gray"
+                android:textColor="@color/fast_rescue_gray"
                 android:textSize="14sp" />
 
             <EditText
@@ -58,8 +58,8 @@
                 android:layout_height="wrap_content"
                 android:hint="Username"
                 android:inputType="text"
-                android:textColor="@color/siaga_text"
-                android:textColorHint="@color/siaga_gray" />
+                android:textColor="@color/fast_rescue_text"
+                android:textColorHint="@color/fast_rescue_gray" />
 
             <EditText
                 android:id="@+id/etPassword"
@@ -68,8 +68,8 @@
                 android:layout_marginTop="12dp"
                 android:hint="Password"
                 android:inputType="textPassword"
-                android:textColor="@color/siaga_text"
-                android:textColorHint="@color/siaga_gray" />
+                android:textColor="@color/fast_rescue_text"
+                android:textColorHint="@color/fast_rescue_gray" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnLogin"
@@ -78,7 +78,7 @@
                 android:layout_marginTop="20dp"
                 android:fontFamily="@font/poppins_semibold"
                 android:text="Masuk"
-                app:backgroundTint="@color/siaga_red"
+                app:backgroundTint="@color/fast_rescue_red"
                 app:cornerRadius="12dp" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>

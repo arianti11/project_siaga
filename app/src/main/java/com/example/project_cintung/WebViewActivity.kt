@@ -28,12 +28,14 @@ class WebViewActivity : AppCompatActivity() {
 
         binding.webView.webViewClient = WebViewClient()
         binding.webView.settings.javaScriptEnabled = true
-        binding.webView.loadUrl("https://www.google.com/aclk?sa=L&ai=DChsSEwig5r6WvsiXAxV_mWYCHbcrAGcYACICCAEQABoCc20&ae=2&co=1&ase=2&gclid=EAIaIQobChMIoOa-lr7IlwMVf5lmAh23KwBnEAAYASAAEgKMl_D_BwE&cid=CAAS0wHkaGq9HHy9NRt7G4wXwVgys0_NZeQAfVfsSErI5Kpo_ynKVkv5NKN3fKWNdx_k-gWkOsePSUA_ccI231NgzCyYhXMHdfFsiG13PDT1tX0t8ds5biATJYBOiPgEcsGjAIo6IdtajQg11Gwgc1XjyGfwW4qk9O46xPiwsnzPb_TsNRSfMZ76Ay0RQV7dl7aFfXj_uO1WWxxkJXudTEq_XK-9n20t_bu4C-OnMOgbhUZuqfp1wfpEjwhFWt3mpWoJcabRKUEI4Erij-cMDsLYYERbpt_D&cce=2&category=acrcp_v1_71&sig=AOD64_1sdHehhvc_MBTKymBRVJXYlk0vwA&q&nis=4&adurl&ved=2ahUKEwiKxriWvsiXAxVq1DgGHZYMOS8Q0Qx6BAgZEAE")
+        val url = intent.getStringExtra("EXTRA_URL")
+            ?: "https://keslan.kemkes.go.id/view_artikel/1206/penanganan-awal-luka-bakar"
+        binding.webView.loadUrl(url)
 
         setSupportActionBar(binding.toolbar)
         supportActionBar?.apply {
             title = "Sumber Referensi"
-            subtitle = "Palang Merah Indonesia"
+            subtitle = "Baca Selengkapnya"
             setDisplayHomeAsUpEnabled(true)
             setDisplayShowHomeEnabled(true)
             setHomeAsUpIndicator(R.drawable.ic_arrow_back)

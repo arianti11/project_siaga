@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/siaga_bg"
+    android:background="@color/fast_rescue_bg"
     tools:context=".PanduanActivity">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -18,7 +18,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/siaga_red_dark"
+            android:background="@color/fast_rescue_red_dark"
             app:layout_scrollFlags="scroll|enterAlways"
             app:subtitleTextColor="@android:color/white"
             app:titleTextColor="@android:color/white" />
@@ -42,7 +42,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_semibold"
                 android:text="Judul"
-                android:textColor="@color/siaga_red"
+                android:textColor="@color/fast_rescue_red"
                 android:textSize="22sp" />
 
             <TextView
@@ -51,7 +51,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:text="Ringkasan"
-                android:textColor="@color/siaga_gray"
+                android:textColor="@color/fast_rescue_gray"
                 android:textSize="15sp" />
 
             <androidx.cardview.widget.CardView
@@ -72,8 +72,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/poppins_semibold"
-                        android:text="Langkah Umum"
-                        android:textColor="@color/siaga_text"
+                        android:text="Langkah-Langkah"
+                        android:textColor="@color/fast_rescue_text"
                         android:textSize="16sp" />
 
                     <TextView
@@ -83,18 +83,72 @@
                         android:layout_marginTop="8dp"
                         android:lineSpacingExtra="4dp"
                         android:text="Langkah"
-                        android:textColor="@color/siaga_text"
+                        android:textColor="@color/fast_rescue_text"
                         android:textSize="15sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:cardBackgroundColor="#FFEBEE"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Kapan Harus Memanggil Bantuan"
+                        android:textColor="@color/fast_rescue_red_dark"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tvBantuan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:lineSpacingExtra="2dp"
+                        android:text="Bantuan"
+                        android:textColor="@color/fast_rescue_red_dark"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tvSumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Sumber"
+                android:textColor="@color/fast_rescue_gray"
+                android:textSize="13sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSumber"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="12dp"
+                android:text="Baca Sumber Lengkap"
+                android:textColor="@color/fast_rescue_red"
+                app:cornerRadius="12dp"
+                app:strokeColor="@color/fast_rescue_red" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnBantuan"
                 android:layout_width="match_parent"
                 android:layout_height="52dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="12dp"
                 android:text="Butuh Bantuan?"
-                app:backgroundTint="@color/siaga_red"
+                app:backgroundTint="@color/fast_rescue_red"
                 app:cornerRadius="12dp" />
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>

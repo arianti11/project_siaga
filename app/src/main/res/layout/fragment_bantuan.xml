@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/siaga_bg"
+    android:background="@color/fast_rescue_bg"
     android:orientation="vertical"
     tools:context=".BantuanFragment">
 
@@ -12,7 +12,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/siaga_red_dark"
+        android:background="@color/fast_rescue_red_dark"
         app:titleTextColor="@android:color/white" />
 
     <ListView
@@ -20,4 +20,11 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Layanan 112 belum tersedia di semua daerah. Jika tidak tersambung, hubungi ambulans 118 atau 119. Pastikan juga kamu tahu nomor ambulans di daerahmu."
+        android:textColor="@color/fast_rescue_gray"
+        android:textSize="13sp" />
 </LinearLayout>

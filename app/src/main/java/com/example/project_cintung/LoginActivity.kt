@@ -30,7 +30,7 @@ class LoginActivity : AppCompatActivity() {
             val user = binding.etUsername.text.toString().trim()
             val pass = binding.etPassword.text.toString().trim()
 
-            if (user == "admin" && pass == "siaga123") {
+            if (user == "admin" && pass == "cinta123") {
                 val sharedPref = getSharedPreferences("user_pref", MODE_PRIVATE)
                 val editor = sharedPref.edit()
                 editor.putBoolean("isLogin", true)
